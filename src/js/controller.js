@@ -166,5 +166,50 @@ When we add/cahnge some code in files, A will change to M and vs code will add g
 
 After all changes, when we are ready to commit files we should run in terminal again git status and it will show as add files and files where changes happend. After that we should run in terminal again git add -A and all files are redy to be commited. All green lines, that are representing changes, will disappear after running  git add -A. 
 
+after that we are running git commit -m 'Initial commit' -m stands for message and after -m we are naming commit as string. And after that all files on side bar all looking "normal" again. without any letters on the side such are U, A, M.
 
+git reset --hard HEAD -> will reset code to the last version of code. It will delete all added code and code it will look like same as after we run git add -A last time.
+
+Coming back to previous commit and deleting something that was commited ====>
+
+run in terminal git log
+we will get list with all commits.
+copy ID of commit where you want to come back 
+
+TYPE ====> Q
+With Q we will quit/exit of git log
+
+after that
+run in terminal git reset --hard id  -> id is the one that we copied from the git log
+and after that we will return to commit with id that we declared.
+
+BRANCH
+
+run in terminal git branch 
+and that will simply list all brances that we are currently having. 
+To exit out of recived log, we need to write Q. 
+
+CREATING NEW BRANCH
+
+New branch is the copy of the current branch(master branch) in which we can develop a new code, add a new features, but without affecting the code that is in the master branch. It's basicly a parallel tarck where we can develope a new code without affecting the origanl code that we already have. 
+
+1. creating new branch
+git branch name-of-branch
+
+2. after creating a new branch, we should switch to the new branch
+git checkout name-of-branch
+
+3. going back to master branch
+
+git checkout master
+
+After step 3 code that we added in the new brach will go away 
+
+4. merge branches
+
+when we want to merge new code from name-of-branch into master branch, we should transfer to the master branch and run in the terminal git merge name-of-branch
+and new code will be added into master branch.
+
+GIT CHEATSHEET
+https://education.github.com/git-cheat-sheet-education.pdf
 */

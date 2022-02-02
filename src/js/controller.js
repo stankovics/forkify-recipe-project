@@ -212,4 +212,22 @@ and new code will be added into master branch.
 
 GIT CHEATSHEET
 https://education.github.com/git-cheat-sheet-education.pdf
+
+
+ADDING PROJECT TO THE GITHUB
+
+1. Create new repository
+
+copy first line of code in section --> …or push an existing repository from the command line  ---> and run in terminal
+e.g. git remote add origin https://github.com/stankovics/forkify-recipe-project.git
+
+2. git push origin name-of-branch
+
+3. reload repository page and code should be there!
+
+4. we can also push other branches into remote repository
+git push origin name-of-new-branch
+
+5. Create README.md file
+$null> README.md
 */

@@ -9,10 +9,6 @@ import addRecipeView from './views/addRecipeView.js';
 
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
-// Parcel code -> Hot Module Replacement (HMR) exchanges, adds, or removes modules while an application is running, without a full reload.
-//if (module.hot) {
-//module.hot.accept();
-//}
 
 const recipeContainer = document.querySelector('.recipe');
 
@@ -230,4 +226,30 @@ git push origin name-of-new-branch
 
 5. Create README.md file
 $null> README.md
+
+UPDATING PROJECT ON GITHUB
+After changes run in the terminal 
+
+git add -A,
+git commit -m 'message'
+git push origin master
+
+PRACTICAL USE/REAL USE
+
+USUALLY FIRST WE CREATE NEW REPOSITORY ON THE GIT HUB, WE ADD README FILE AND .gitignore AND THAN WE PULL THAT REPOSITORY TO OUR COMPUTER. 
+
+
+SETTING UP CONTINOUS INTEGRATION WITH NETLIFY ===> setting up live online. after every save, netlify will build automatily for us
+
+Our project is already uploaded on netlify
+
+1. open site settings
+2. choose build & deploy from sidebar
+3. Link site to Git
+4.Connect to git provider (github)
+5. Select repository
+6. Configure your build
+in field build command we should paste our build command e.g. ===> parcel build index.html --dist-dir ./dist
+build command should be npm run build 
+
 */
